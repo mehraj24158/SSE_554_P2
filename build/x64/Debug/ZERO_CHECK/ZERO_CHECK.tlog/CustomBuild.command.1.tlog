@@ -1,0 +1,10 @@
+^C:\USERS\MEHRAJ_AHMED\WORKSPACE\SSE_554\P2\SSE_554_P2\BUILD\CMAKEFILES\265A8D0D90F4840DD61140060A05EDA4\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Mehraj_Ahmed/Workspace/SSE_554/P2/SSE_554_P2 -BC:/Users/Mehraj_Ahmed/Workspace/SSE_554/P2/SSE_554_P2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Mehraj_Ahmed/Workspace/SSE_554/P2/SSE_554_P2/build/self.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
