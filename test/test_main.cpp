@@ -1,10 +1,11 @@
-  #include "gtest/gtest.h"
+#include "gtest/gtest.h"
 #include "../factory.hpp"
 
-TEST(complete car, Default){
-
+TEST(complete_car, Default){
+    ;
 };
 
-TEST(incomplete car, Default){
-
+TEST(incomplete_car, Default){
+    ;
 };
+
