@@ -32,6 +32,6 @@
 *.app
 
 # Build Folder
-build\
-.vscode
-.vscode\
+build/*
+# exception to the rule
+!build/.gitkeep 
