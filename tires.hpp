@@ -1,17 +1,30 @@
 #include <iostream>
 using namespace std; 
 
+
+// Can we change this class to a single tire and then have the car
+// class contain a vector of tire objects. This will allow the factory to 
+// access the number of tires within the car object itself, without 
+// needing access to the tires class within the car class. 
 class Tires{ 
-    public: 
-     Tires(int s= 0,int cnt = 0, string mod =" ",string comStat=" ");
-     int size;
-     int count; 
-     string modelName; 
-     string completionStatus; 
-     void Tires :: set_size(int s);
-     int get_size();
-     void Tires::set_model(string mod);
-     string get_model();
-     string returnCompleteStatus(int count); 
+public: 
+    // attributes
+    int size; // inches
+    int count; 
+    string modelName; 
+    string completionStatus;
+
+    // constructors
+    Tires(int s= 0,int cnt = 0, string mod =" ",string comStat=" ");
+
+    // get methods
+    int get_size();
+    string get_model();
+    string returnCompleteStatus(); 
+
+    // set methods
+    void set_size(int s);
+    void set_model(string mod);
+    void setCompleteStatus(string comStat);
 };
 

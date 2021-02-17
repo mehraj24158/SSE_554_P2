@@ -2,38 +2,45 @@
 #include <iostream>
 using namespace std;
 
-Tires::Tires(s, cnt, mod,comStat) {}: size(s), count(cnt), modelName(mod), completionStatus(comStat)
+// Constructors
+Tires::Tires(int s, int cnt, string mod, string comStat) : size(s), count(cnt), modelName(mod), completionStatus(comStat)
 {} 
 
-
-void Tires :: set_size(int s){
-    this->size = s; 
-    size = 19; //19" tires  
-}
+// get methods
 int Tires::get_size(){ 
     return size; 
 }
-void Tires::set_model(string mod){
-    this->modelName = mod; 
-}
+
 string Tires:: get_model(){ 
     return modelName; 
 }
-int returnCompletionStatus(int cnt){ 
-    for(int i = 1; i<=4; i++){
-         int count = 0+i; 
-    }
-    return count; 
 
+// set methods
+void Tires :: set_size(int s){
+    this->size = s;   
 }
-int main(){ 
-    Tires tire1 = new Tires(); 
-    tire1.set_size(); 
-    tire1.get_size(); 
-    tire1.set_model(); 
-    tire1.get_model(); 
-    tire1.returnCompletionStatus(); 
 
+void Tires::set_model(string mod){
+    this->modelName = mod; 
+}
+
+
+// Not sure what this is 
+// int returnCompletionStatus(){ 
+//     int count = 0;
+//     for(int i = 1; i<=4; i++){
+//          count +=1
+//     }
+//     return count; 
+// }
+
+int main(){ 
+    Tires tire1; 
+    tire1.set_size(19); 
+    tire1.get_size(); 
+    tire1.set_model("Model 3"); 
+    tire1.get_model(); 
+    tire1.returnCompleteStatus();
 }
 
 
