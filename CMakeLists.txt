@@ -9,11 +9,11 @@ enable_testing()
 add_subdirectory(googletest)
 
 set(headers
-    factory.hpp
+    operations.hpp
 )
 
 set(src
-    factory.cpp
+    operations.cpp
 )
 
 add_library(${self} STATIC ${src} ${headers})
