@@ -1,9 +1,9 @@
-#include "tires.hpp"
+#include "tire.hpp"
 #include <iostream>
 using namespace std;
 
 //Constructor 
-//Tire::Tire(s, mod, comStat) : size(s),modelName(mod), completeStatus(comState) {}
+Tire::Tire (int s, string mod, string comStat) {}
 
 void Tire :: set_size(int s){
     this->size = s; 
@@ -19,18 +19,19 @@ void Tire::set_model(string mod){
 string Tire:: get_model(){ 
     return modelName; 
 }
-string returnCompleteStatus(){ 
-
+string returnCompleteStatus(string comStat){ 
+    string comStat = "Complete"; 
+    return comStat; 
 }
-void main(){ 
+/*int main(){ 
     int size; 
     string modelName = " "; 
     string completeStatus = " "; 
-    Tire tire1 = new Tire(size, modelName, completeStatus);
+    Tire tire1 = Tire(size, modelName, completeStatus);
     tire1.set_model(modelName); 
     cout<<modelName; 
-
-}
+    return 0; 
+}*/
 
 
 
