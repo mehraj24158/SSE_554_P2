@@ -2,7 +2,8 @@
 #include <iostream>
 using namespace std;
 
-Tires :: Tires(s, cnt, mod,comStat): size(s), count(cnt), modelName(mod), completionStatus(cnt){} 
+Tires::Tires(s, cnt, mod,comStat) {}: size(s), count(cnt), modelName(mod), completionStatus(comStat)
+{} 
 
 
 void Tires :: set_size(int s){
@@ -18,14 +19,22 @@ void Tires::set_model(string mod){
 string Tires:: get_model(){ 
     return modelName; 
 }
-string returnCompletionStatus(int cnt, string comStat){ 
+int returnCompletionStatus(int cnt){ 
     for(int i = 1; i<=4; i++){
          int count = 0+i; 
     }
-    string status = "4 Tires have been produced. "; 
-    return status; 
-}
+    return count; 
 
+}
+int main(){ 
+    Tires tire1 = new Tires(); 
+    tire1.set_size(); 
+    tire1.get_size(); 
+    tire1.set_model(); 
+    tire1.get_model(); 
+    tire1.returnCompletionStatus(); 
+
+}
 
 
 
