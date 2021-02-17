@@ -16,6 +16,7 @@ public:
     //constructor sets the threads to point at the functor of interest
     Factory(std::thread t, std::thread e, std::thread b);
 
+    //Main thread operation which communicates with other three sub-threads
     void operate(/*pointer to a vector of car objs*/);
 };
 
