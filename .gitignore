@@ -35,3 +35,5 @@
 build/*
 # exception to the rule
 !build/.gitkeep 
+
+*.vscode
