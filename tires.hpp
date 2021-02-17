@@ -2,6 +2,10 @@
 using namespace std; 
 
 
+
+// We could probably put all of the component classes under a seperate
+// folder just to clean up our file
+
 // Can we change this class to a single tire and then have the car
 // class contain a vector of tire objects. This will allow the factory to 
 // access the number of tires within the car object itself, without 
