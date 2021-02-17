@@ -6,16 +6,16 @@ using namespace std;
 // class contain a vector of tire objects. This will allow the factory to 
 // access the number of tires within the car object itself, without 
 // needing access to the tires class within the car class. 
-class Tires{ 
+class Tire{ 
 public: 
     // attributes
     int size; // inches
-    int count; 
+    //int count; 
     string modelName; 
     string completionStatus;
 
     // constructors
-    Tires(int s= 0,int cnt = 0, string mod =" ",string comStat=" ");
+    Tire(int s= 0, string mod =" ",string comStat=" ");
 
     // get methods
     int get_size();
