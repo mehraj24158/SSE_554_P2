@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <thread>
+#include <vector>
+
 class Factory
 {
 public:
@@ -17,22 +19,14 @@ public:
     void operate(/*pointer to a vector of car objs*/);
 };
 
-void TireInstaller(/*pointer to car obj*/)
-{   
-    //Install tires if not present in car
-}
+//Install tires if not present in car
+void TireInstaller(/*pointer to car obj*/);
 
-void EngineInstaller(/*pointer to car obj*/)
-{   
-    //Install Engine if not present in car
-}
+//Install Engine if not present in car
+void EngineInstaller(/*pointer to car obj*/);
 
-void BodyInstaller(/*pointer to car obj*/)
-{   
-    //Install Engine if not present in car
-}
+//Install Engine if not present in car
+void BodyInstaller(/*pointer to car obj*/);
 
-void Validate(/*pointer to a vector of car objs*/)
-{
-    //Check if all cars are completede\
-}
+//Check if all cars are complete
+bool Validate(/*pointer to a vector of car objs*/);
