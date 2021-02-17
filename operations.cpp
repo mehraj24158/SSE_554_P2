@@ -8,7 +8,7 @@ void main()
 {
     std::thread t2(BodyCreator);
     std::thread t1(EngineCreator);
-    std::thread t2(TireCreator)
+    std::thread t2(TireCreator);
 }
 
 void EngineCreator()
