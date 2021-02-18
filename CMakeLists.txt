@@ -9,11 +9,19 @@ enable_testing()
 add_subdirectory(googletest)
 
 set(headers
-    operations.hpp
+    # operations.hpp
+    engine.hpp
+    frame.hpp
+    tire.hpp
+    car.hpp
 )
 
 set(src
-    operations.cpp
+    # operations.cpp
+    engine.cpp
+    frame.cpp
+    tire.cpp
+    car.cpp
 )
 
 add_library(${self} STATIC ${src} ${headers})

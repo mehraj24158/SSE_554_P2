@@ -3,11 +3,14 @@ using namespace std;
 
 class Frame {
     //attributes
-    private: 
+private: 
     int body;
     int nuts_bolts; 
-    public:
+public:
+
+    //constructors
+    Frame();
     //methods
-    int getBodyStatus(Frame body); 
-    int countNutsBolts(Frame nuts_bolts); 
+    int getBodyStatus(); 
+    int countNutsBolts(); 
 };

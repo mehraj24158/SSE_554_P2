@@ -10,7 +10,7 @@ add_executable(${self} ${src})
 
 target_link_libraries(${self} PUBLIC
     gtest_main
-    operations
+    factory
 )
 
 add_test(

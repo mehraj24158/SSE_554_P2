@@ -10,18 +10,17 @@ void Tire :: set_size(int s){
     size = 19; //19" tires  
 }
 int Tire::get_size(){ 
-    return size; 
+    return this->size; 
 }
 void Tire::set_model(string mod){
     this->modelName = mod; 
     modelName = "Goodyear"; 
 }
 string Tire:: get_model(){ 
-    return modelName; 
+    return this->modelName; 
 }
-string returnCompleteStatus(string comStat){ 
-    string comStat = "Complete"; 
-    return comStat; 
+string Tire::returnCompleteStatus(){ 
+    return this->completionStatus; 
 }
 /*int main(){ 
     int size; 
