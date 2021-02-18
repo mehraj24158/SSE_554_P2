@@ -7,7 +7,7 @@ class Frame {
     int body;
     int nuts_bolts; 
     public:
-    //functions 
+    //methods
     int getBodyStatus(Frame body); 
     int countNutsBolts(Frame nuts_bolts); 
 };

@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std; 
 
-
-
 // We could probably put all of the component classes under a seperate
 // folder just to clean up our file
 
