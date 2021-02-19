@@ -16,13 +16,7 @@ TEST(EngineInstall, EmptyCar){
     Car* P = &one;
     std::thread engine(EngineInstaller, std::ref(P));
     engine.join();
-
     ASSERT_TRUE(&P->engine != NULL);
-
-    if(&P->engine != NULL)
-    {
-        std::cout << "Engine Installed Successfully";
-    }
 };
 
 TEST(FrameInstall, EmptyCar){
@@ -31,13 +25,16 @@ TEST(FrameInstall, EmptyCar){
     Car* P = &one;
     std::thread frame(FrameInstaller, std::ref(P));
     frame.join();
-
     ASSERT_TRUE(&P->frame != NULL);
+};
 
-    if(&P->frame != NULL)
-    {
-        std::cout << "Engine Installed Successfully";
-    }
+TEST(TireInstall, EmptyCar){
+    Car one;
+    Car* P = &one;
+    std::thread Tire(TireInstaller, std::ref(P));
+    Tire.join();
+    ASSERT_TRUE(&P->tire!= NULL);
+    ASSERT_TRUE(P->tire.size()==4) << P->tire.size() << " Number of tires";
 };
 
 

@@ -2,12 +2,13 @@
 
 void TireInstaller(Car* c)
 {
-    if(&(c->tire) == NULL)
+    if(c->tire.size() < 4)
     {
-        for(int i = 0; c->tire.size()<4; i++)
+        for(int i = c->tire.size(); i<4; i++)
         {
             Tire t;
-            c->tire.push_back(t);
+            Tire* x = &t;
+            c->tire.push_back(x);
         }
     }
 }
