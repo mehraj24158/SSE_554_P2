@@ -1,6 +1,5 @@
 #include "gtest/gtest.h"
 #include "test_main.hpp"
-
 // For example vector of 5 cars randomly generated
 // loop through each car and a seperate vector containing each thread will install the neccessary part
 //  
@@ -11,14 +10,34 @@
 // Cars should come out complete and can be validated easily. 
 
 
-TEST(complete_car, Default){
-    std::vector<Car> cars;
+TEST(EngineInstall, EmptyCar){
+  
     Car one;
-    cars.push_back(one);
-    std::cout<< "Test Works";
+    Car* P = &one;
+    std::thread engine(EngineInstaller, std::ref(P));
+    engine.join();
+
+    ASSERT_TRUE(&P->engine != NULL);
+
+    if(&P->engine != NULL)
+    {
+        std::cout << "Engine Installed Successfully";
+    }
 };
 
-TEST(incomplete_car, Default){
-    ;
+TEST(FrameInstall, EmptyCar){
+  
+    Car one;
+    Car* P = &one;
+    std::thread frame(FrameInstaller, std::ref(P));
+    frame.join();
+
+    ASSERT_TRUE(&P->frame != NULL);
+
+    if(&P->frame != NULL)
+    {
+        std::cout << "Engine Installed Successfully";
+    }
 };
+
 

@@ -1,8 +1,11 @@
-
+#pragma once
 
 class Engine{ 
 public: 
     // attributes
     
-    // methosd
+    // constructors
+    Engine();
+
+    // methods
 };

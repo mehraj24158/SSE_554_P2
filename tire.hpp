@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 using namespace std; 
 
@@ -17,7 +18,8 @@ public:
     string completionStatus;
 
     // constructors
-    Tire(int s= 0, string mod =" ",string comStat=" ");
+    Tire();
+    // Tire(int s= 0, string mod =" ",string comStat=" ");
 
     // get methods
     int get_size();

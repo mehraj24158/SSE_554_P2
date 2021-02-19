@@ -3,7 +3,9 @@
 using namespace std;
 
 //Constructor 
-Tire::Tire (int s, string mod, string comStat) {}
+Tire::Tire (){}
+
+// Tire::Tire (int s, string mod, string comStat) {}
 
 void Tire :: set_size(int s){
     this->size = s; 

@@ -1,7 +1,9 @@
 #pragma once
-// #include <iostream>
-// #include <thread>
-// #include "car.hpp"
+#include <iostream>
+#include <thread>
+#include "car.hpp"
+#include "tire.hpp"
+#include "frame.hpp"
 
 // class Factory
 // {
@@ -12,7 +14,6 @@
 //     std::thread tire;
 //     std::thread engine;
 //     std::thread body;
-
 //     //constructor sets the threads to point at the functor of interest
 //     Factory(std::thread t, std::thread e, std::thread b);
 
@@ -20,14 +21,14 @@
 //     void operate(/*pointer to a vector of car objs*/);
 // };
 
-// //Install tires if not present in car
-// void TireInstaller(/*pointer to car obj*/);
+//Install tires if not present in car
+void TireInstaller(Car* c);
 
-// //Install Engine if not present in car
-// void EngineInstaller(/*pointer to car obj*/);
+//Install Engine if not present in car
+void EngineInstaller(Car* c);
 
-// //Install Engine if not present in car
-// void BodyInstaller(/*pointer to car obj*/);
+//Install Engine if not present in car
+void FrameInstaller(Car* c);
 
-// //Check if all cars are complete
-// bool Validate(/*pointer to a vector of car objs*/);
+//Check if all cars are complete
+bool Validate(Car* c);

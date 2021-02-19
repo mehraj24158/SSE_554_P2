@@ -9,9 +9,11 @@ class Car
 {   
 public:
     //attributes
-    vector<Tire> t;
-    Frame f;
-    Engine e;
+    vector<Tire> tire;
+    Frame frame;
+    Engine engine;
+
+    int id;
 
     //constructors
     Car();
