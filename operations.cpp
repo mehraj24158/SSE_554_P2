@@ -1,7 +1,11 @@
-#include "operations.hpp"
+#include "Operations.hpp"
+
+
+Operations::Operations(){}
+
 
 //Install Engine if not present in car
-void EngineInstaller(Car* c)
+void Operations::EngineInstaller(Car* c)
 {   
     if(&(c->engine) == NULL)
     {
@@ -10,7 +14,7 @@ void EngineInstaller(Car* c)
     }
 }
 
-void EngineInstallerVect(std::vector<Car*> cars)
+void Operations::EngineInstaller(std::vector<Car*> cars)
 {   
     for(Car* c:cars)
     {
@@ -23,7 +27,7 @@ void EngineInstallerVect(std::vector<Car*> cars)
 }
 
 //Install Frame if not present in car
-void FrameInstaller(Car* c)
+void Operations::FrameInstaller(Car* c)
 {
     if(&(c->frame) == NULL)
     {
@@ -32,7 +36,7 @@ void FrameInstaller(Car* c)
     }
 }
 
-void FrameInstallerVect(std::vector<Car*> cars)
+void Operations::FrameInstaller(std::vector<Car*> cars)
 {
     for(Car* c:cars)
     {
@@ -45,7 +49,7 @@ void FrameInstallerVect(std::vector<Car*> cars)
 }
 
 //Install Tire if not present in car
-void TireInstaller(Car* c)
+void Operations::TireInstaller(Car* c)
 {
     if(c->tire.size() < 4)
     {
@@ -58,7 +62,7 @@ void TireInstaller(Car* c)
     }
 }
 
-void TireInstallerVect(std::vector<Car*> cars)
+void Operations::TireInstaller(std::vector<Car*> cars)
 {
     for(Car* c:cars)
     {
@@ -74,9 +78,8 @@ void TireInstallerVect(std::vector<Car*> cars)
     }
 }
 
-
 //Check if car is are complete
-bool Validate(Car* c)
+bool Operations::Validate(Car* c)
 {
     if(&(c->tire) == NULL && &(c->engine) == NULL && &(c->frame) == NULL)
     {
